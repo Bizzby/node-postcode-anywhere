@@ -10,7 +10,7 @@ npm install postcode-anywhere
 ## usage
 ```javascript
 
-var key '<YOUR_API_KEY_OBTAINED_FROM_THE_POSTCODE_ANYWHERE>'
+var key = '<YOUR_API_KEY_OBTAINED_FROM_THE_POSTCODE_ANYWHERE>'
 
 var gateway = new Gateway( key );
 
