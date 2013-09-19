@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - 0.8
+  - "0.10"
+  - 0.11
+
+matrix:
+  allow_failures:
+    - node_js: 0.11
+
+notifications:
+  email:
+    - fab@bizzby.com
+    - james@bizzby.com
+
+env:
+  global:
+    - NODE_ENV=testing
