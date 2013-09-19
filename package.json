@@ -2,15 +2,26 @@
   "name": "postcode-anywhere",
   "preferGlobal": false,
   "private": false,
-  "version": "0.0.4",
+  "version": "0.1.1",
   "main": "lib/Gateway",
   "description": "Postcode Anywhere service wrapper for node.js",
+  "keywords": [
+    "postcode-anywhere",
+    "postcode",
+    "bank",
+    "account",
+    "webservice"
+  ],
   "repository": "https://github.com/Bizzby/node-postcode-anywhere.git",
+  "bugs": {
+    "url": "https://github.com/Bizzby/node-postcode-anywhere/issues"
+  },
+  "license": "MIT",
   "scripts": {
-    "prepublish": "./node_modules/.bin/coffee -o lib/ -c src"
+    "prepublish": "coffee -o lib/ -c src"
   },
   "dependencies": {
-    "hyperquest": "0.1.7"
+    "hyperquest": "0.1.x"
   },
   "devDependencies": {
     "coffee-script": "1.6.x"
