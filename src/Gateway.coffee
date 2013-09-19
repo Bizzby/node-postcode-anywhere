@@ -44,11 +44,19 @@ class Gateway
       data = ''
       res.on 'data', (chunk) -> data += chunk
       res.on 'end', () -> 
-        try
-          callback null, JSON.parse data
+
+        try data = JSON.parse data
         catch error
           #TODO make this error nicer - e.g error parsing json
-          callback error
+          return callback error
+
+        unless data.Items?[0]?
+          return callback new Error 'Invalid response'
+
+        if data.Items[0].Error?
+          return callback new Error data.Items[0].Description
+
+        return callback null, data
 
 
 module.exports = Gateway
