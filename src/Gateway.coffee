@@ -56,7 +56,7 @@ class Gateway
         if data.Items[0].Error?
           return callback new Error data.Items[0].Description
 
-        return callback null, data
+        return callback null, data.Items[0]
 
 
 module.exports = Gateway

@@ -2,7 +2,7 @@
   "name": "postcode-anywhere",
   "preferGlobal": false,
   "private": false,
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "lib/Gateway",
   "description": "Postcode Anywhere service wrapper for node.js",
   "keywords": [
