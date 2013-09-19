@@ -2,7 +2,7 @@
   "name": "postcode-anywhere",
   "preferGlobal": false,
   "private": false,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Postcode Anywhere service wrapper for node.js",
   "repository": "https://github.com/Bizzby/node-postcode-anywhere.git",
   "dependencies": {
